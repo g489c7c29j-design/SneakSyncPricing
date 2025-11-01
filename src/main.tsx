@@ -1,13 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-function App() {
-  return (
-    <div style={{ padding: 16, fontFamily: "sans-serif" }}>
-      <h1>SneakSync Pricing Dashboard</h1>
-      <p>Welcome! Your app is running successfully 🎉</p>
-    </div>
-  );
-}
+createRoot(document.getElementById("root")!).render(<App />);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(<App />);
